@@ -1,0 +1,12 @@
+a = 1
+b = 10
+L1:
+if a < b goto L2
+goto L3
+L2:
+t1 = a + 1
+a = t1
+t2 = a * 1
+a = t2
+goto L1
+L3:
