@@ -12,7 +12,7 @@ char *new_label() { char *l = malloc(20); sprintf(l, "L%d", lc++); return l; }
 %union { char str[100]; }
 
 %token <str> ID NUM RELOP
-%token INT FLOAT CHAR DOUBLE IF ELSE WHILE FOR INC
+%token INT FLOAT CHAR DOUBLE IF ELSE WHILE FOR
 %type  <str> cond expr for_increment if_head
 
 %left '+' '-'
